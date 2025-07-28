@@ -1,0 +1,17 @@
+--7.Creating a Stored Procedure for Product Reviews
+DROP PROCEDURE IF EXISTS AddProductReview;
+DELIMITER//
+
+CREATE PROCEDURE AddProductReview(
+    IN P_product_id INT,
+    IN p_user_id INT,
+    IN p_rating INT,
+    IN p_review TEXT
+)
+BEGIN
+     INSERT INTO reviews (product_id,user_id,rating,review_text)
+     VALUES(P_product_id,p_user_id,p_rating,p_review);
+     END//
+
+     DELIMITER;
+     CALL AddProductReview(1,1,5,'Great product!';)
