@@ -10,4 +10,8 @@ BEGIN
     WHERE username = p_username AND password = p_password;
 END //
 
+<<<<<<< HEAD
 DELIMITER;
+=======
+DELIMITER ;
+>>>>>>> 8ce31f243ec86a086b92ac73c491a8fdb9457b5a
